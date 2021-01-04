@@ -1,0 +1,82 @@
+#root {
+    height: 100vh;
+    width: 100%;
+    background: transparent
+     linear-gradient(90deg, #49BE9F 0%, #57BAA1 20%, #6D6FBF 48%, #817AD1 67%, #E98FB9 100%) 
+    0% 0% no-repeat padding-box;
+}
+
+#root #subRoot, #root #subRoot #row1, #root #subRoot #row1 #col1 {
+    height: 100%;
+}
+
+#root #subRoot #row1 #col1 .content {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.inputURL {
+    position: relative;
+}
+
+.url, .desiredKeyword, .copiedTxt {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.specialButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    background-color: red;
+    color: #FFF;
+    background: transparent linear-gradient(90deg, #B14ABE 0%, #9090E9 100%) 0% 0% no-repeat padding-box;
+}
+
+
+.login, .login:hover, .login:active {
+    color: #FFF;
+    outline: none;
+}
+
+.signup {
+    background-color: #FFF;
+    border-radius: 25px;
+    color: #E28EBB;
+}
+
+
+
+
+.pickDomain, .pickDomain:active {
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    background-color: red;
+    color: #FFF;
+    background: transparent linear-gradient(90deg, #B14ABE 0%, #9090E9 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    outline: none;
+}
+
+#first {
+    display: block;
+}
+
+#last {
+    display: none;
+}
