@@ -35,6 +35,8 @@ $(() => {
         $("#last").fadeIn();
         const copiedTxt = $("#word").text() + "/" + $("#desiredKeyword").val()
         $("#copiedTxt").val(copiedTxt);
+        $(".absImage").css("display", "none");
+        $(".resetAbsImage").css("display", "block");
     });
     pickDomain.click((e) => {
       const textContent = e.target.textContent;
@@ -53,7 +55,10 @@ $(() => {
         $("#first").fadeIn();
         $("#url").val("");
         $("#desiredKeyword").val("");
-        $("#word").text('linkd.dev');
-        $(".navbar-brand").text('LNKED.DEV');
+        $("#word").text('lnkd.dev');
+        $(".navbar-brand").text('LNKD.DEV');
+        $(".resetAbsImage").css("display", "none");
+        $(".absImage").css("display", "block");
+      
     })
 });

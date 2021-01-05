@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&family=Open+Sans:wght@600&display=swap');
 #root {
     height: 100vh;
     width: 100%;
@@ -17,30 +18,64 @@
     justify-content: space-between;
 }
 
+#first h2, #last h2 {
+    font: normal normal 600 30px/65px 'Baloo Thambi 2';
+}
+
 .inputURL {
     position: relative;
 }
 
 .url, .desiredKeyword, .copiedTxt {
-    height: 50px;
+    height: 47px;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 24px;
     border: none;
     outline: none;
+   
+}
+
+.url::-webkit-input-placeholder, .desiredKeyword::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: #1D2754;
+    font: normal normal normal 14px/25px 'Baloo Thambi 2';
+}
+
+#httpsWord, #word {
+    color: #FFF;
+    font: normal normal normal 15px/25px 'Baloo Thambi 2';
+}
+
+#httpsWord {
+    opacity: 0.3;
 }
 
 .specialButton {
     position: absolute;
-    top: 0;
+    top: 2px;
     bottom: 0;
-    right: 0px;
-    border-radius: 25px;
+    right: 2px;
+    border-radius: 22px;
+    height: 43px;
+    width: 97px;
+    display: block;
     border: none;
     outline: none;
-    padding: 0 20px;
     background-color: red;
     color: #FFF;
     background: transparent linear-gradient(90deg, #B14ABE 0%, #9090E9 100%) 0% 0% no-repeat padding-box;
+    letter-spacing: 0.55px;
+}
+
+#last .specialButton {
+    width: 43px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.login, .signup, .specialButton {
+    font: normal normal 600 11px/13px 'Open Sans';
 }
 
 
@@ -50,13 +85,13 @@
 }
 
 .signup {
-    background-color: #FFF;
-    border-radius: 25px;
-    color: #E28EBB;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    color: #E990B9;
+    width: 90px;
+    height: 35px;
+    text-transform: uppercase;
 }
-
-
-
 
 .pickDomain, .pickDomain:active {
     top: 0;
@@ -65,12 +100,16 @@
     border-radius: 25px;
     border: none;
     outline: none;
-    padding: 12px;
     background-color: red;
     color: #FFF;
     background: transparent linear-gradient(90deg, #B14ABE 0%, #9090E9 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: 'Baloo Thambi 2', cursive;
 }
 
 #first {
@@ -80,3 +119,61 @@
 #last {
     display: none;
 }
+
+#reset {
+    width: 101px;
+    height: 35px;
+    border-radius: 24px;
+    font: normal normal normal 14px/25px 'Open Sans';
+    color: #4ABE9F;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset span { margin-left: 2px }
+
+.bottomFullImage {
+    position: relative;
+}
+
+.bottomFullImage .absImage {
+    position: absolute;
+    left: 44%;
+    top: 67px;
+}
+
+.bottomFullImage .resetAbsImage {
+    position: absolute;
+    left: 47%;
+    top: 65px;
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+    .bottomFullImage .absImage {
+        top: 40px;
+    }
+    .bottomFullImage .resetAbsImage {
+        left: 45%;
+    }
+    
+    
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .bottomFullImage .absImage {
+        left: 43%;
+        top: 22px;
+    }
+    .bottomFullImage .resetAbsImage {
+        top: 20px;
+    }
+ }
+
+ @media (max-width: 575.98px) { 
+    .bottomFullImage .absImage, .bottomFullImage .resetAbsImage {
+      display: none
+    }
+  }
