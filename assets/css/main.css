@@ -26,6 +26,30 @@
     position: relative;
 }
 
+.copyTxtHover {
+    background-color:#c0a1da;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font: normal normal 600 11px/13px 'Open Sans';
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-align: center;
+    color: #FFF;
+    display: none;
+}
+
+.copyTxtHover span:last-child {
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+    border-top: 8px solid #c0a1da;
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+}
+
 .url, .desiredKeyword, .copiedTxt {
     height: 47px;
     width: 100%;
@@ -34,6 +58,8 @@
     outline: none;
    
 }
+
+
 
 .url::-webkit-input-placeholder, .desiredKeyword::-webkit-input-placeholder {
     opacity: 0.5;
@@ -177,3 +203,4 @@
       display: none
     }
   }
+

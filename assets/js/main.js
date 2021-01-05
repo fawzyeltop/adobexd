@@ -61,4 +61,12 @@ $(() => {
         $(".absImage").css("display", "block");
       
     })
+
+    $("#copyLink").mouseover(() => {
+        $(".copyTxtHover").css("display", "block");
+    })
+
+    $("#copyLink").mouseout(() => {
+        $(".copyTxtHover").css("display", "none");
+    })
 });
